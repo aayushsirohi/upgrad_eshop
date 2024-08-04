@@ -9,6 +9,8 @@ import Header from "./common/Header/Header";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 
+import ProductList from "./components/ProductList/ProductList";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
@@ -18,6 +20,8 @@ root.render(
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+
+      <Route path="/products" element={<ProductList />} />
     </Routes>
   </Router>
 );
