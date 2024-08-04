@@ -1,3 +1,6 @@
+@import "./components/Login/Login.css";
+@import "./components/Signup/Signup.css";
+
 * {
   padding: 0px;
   margin: 0px;
