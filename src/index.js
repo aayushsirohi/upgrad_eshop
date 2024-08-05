@@ -11,6 +11,7 @@ import Signup from "./components/Signup/Signup";
 
 import ProductList from "./components/ProductList/ProductList";
 import AddProduct from "./components/AddProduct/AddProduct";
+import ModifyProduct from "./components/ModifyProduct/ModifyProduct";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
 
       <Route path="/products" element={<ProductList />} />
       <Route path="/AddProductPage" element={<AddProduct />} />
+      <Route path="/ModifyProduct/:id" element={<ModifyProduct />} />
     </Routes>
   </Router>
 );
