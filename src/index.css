@@ -1,5 +1,6 @@
 @import "./components/Login/Login.css";
 @import "./components/Signup/Signup.css";
+@import "./components/AddProduct/AddProduct.css";
 
 * {
   padding: 0px;
