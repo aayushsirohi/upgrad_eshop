@@ -8,6 +8,7 @@ import {
   notifysuccess,
 } from "../../common/Toast/toast";
 import { TokenVerificationLoggedOut } from "../../common/TokenVerify/tokenVerify";
+import { jwtDecode } from "jwt-decode";
 
 function Login() {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ function Login() {
         const token = response.headers["x-auth-token"]; // Get token from the x-auth-token header
         const roles = response.data.roles; // Get user roles from the response data
         localStorage.setItem("token", token);
-        localStorage.setItem("userRoles", JSON.stringify(roles));
+        localStorage.setItem("userRoles", jwtDecode(token).roles);
 
         notifysuccess("Login Successful");
         navigate("/products");
