@@ -15,6 +15,7 @@ import ModifyProduct from "./components/ModifyProduct/ModifyProduct";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 import CreateOrder from "./components/CreateOrder/CreateOrder";
+import Shipping from "./components/Shipping/Shipping";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -33,6 +34,7 @@ root.render(
 
       <Route path="/CreateOrderPage" element={<CreateOrder />} />
       <Route path="/CreateOrderPage/:id" element={<CreateOrder />} />
+      <Route path="/ShippingAddressStep" element={<Shipping />} />
     </Routes>
   </Router>
 );
