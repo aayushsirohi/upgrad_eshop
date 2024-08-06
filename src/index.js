@@ -16,6 +16,7 @@ import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 import CreateOrder from "./components/CreateOrder/CreateOrder";
 import Shipping from "./components/Shipping/Shipping";
+import ConfirmAndReview from "./components/ConfirmAndReview/ConfirmAndReview";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -35,6 +36,7 @@ root.render(
       <Route path="/CreateOrderPage" element={<CreateOrder />} />
       <Route path="/CreateOrderPage/:id" element={<CreateOrder />} />
       <Route path="/ShippingAddressStep" element={<Shipping />} />
+      <Route path="/ReviewAndConfirmStep" element={<ConfirmAndReview />} />
     </Routes>
   </Router>
 );
