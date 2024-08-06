@@ -14,6 +14,8 @@ import AddProduct from "./components/AddProduct/AddProduct";
 import ModifyProduct from "./components/ModifyProduct/ModifyProduct";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 
+import CreateOrder from "./components/CreateOrder/CreateOrder";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
@@ -28,6 +30,9 @@ root.render(
       <Route path="/AddProductPage" element={<AddProduct />} />
       <Route path="/ModifyProduct/:id" element={<ModifyProduct />} />
       <Route path="/ProductDetailsPage/:id" element={<ProductDetail />} />
+
+      <Route path="/CreateOrderPage" element={<CreateOrder />} />
+      <Route path="/CreateOrderPage/:id" element={<CreateOrder />} />
     </Routes>
   </Router>
 );
